@@ -1,0 +1,84 @@
+{
+    "swimlane": {
+      "id": "NewChannels",
+      "description": "New Releases",
+      "type": "CHANNEL",
+      "link": "https://music.stingray.com/app/recommendations/new-releases",
+      "refreshable": false,
+      "scrollable": true
+    },
+    "items": [
+      {
+        "id": "VIB_N1606",
+        "description": "Celebrate the season with this year&rsquo;s essential summer tracks.",
+        "label": "2020 Summer Hits",
+        "cover": "https://image-service.stingray.com/music/VIB_N1606/VIBE_CHANNEL_COVER/%Wx%H/jpg"
+      },
+      {
+        "id": "VIB_N1618",
+        "description": "Explore Quebec&rsquo;s diverse Indigenous music, which features both traditional and contemporary songs from the province&rsquo;s many Indigenous artists.",
+        "label": "Indigenous Music: Quebec",
+        "cover": "https://image-service.stingray.com/music/VIB_N1618/VIBE_CHANNEL_COVER/%Wx%H/jpg"
+      },
+      {
+        "id": "VIB_N1614",
+        "description": "Discover the best English music coming out of Quebec! This mix of all genres is a celebration of great Quebec artists.",
+        "label": "Today's English Quebec",
+        "cover": "https://image-service.stingray.com/music/VIB_N1614/VIBE_CHANNEL_COVER/%Wx%H/jpg"
+      },
+      {
+        "id": "VIB_SC0076",
+        "description": "Explore Canada&rsquo;s diverse Indigenous music, which features both traditional and contemporary songs from the nation&rsquo;s many Indigenous artists.",
+        "label": "Indigenous Music: Canada",
+        "cover": "https://image-service.stingray.com/music/VIB_SC0076/VIBE_CHANNEL_COVER/%Wx%H/jpg"
+      },
+      {
+        "id": "SPF0001",
+        "description": "Bleu Jeans Bleu, Qu&eacute;b&eacute;cois group of the year at the 2019 ADISQ Gala, takes center stage in curating their fun music channel. Discover their favourite tracks and top hits, including the irresistible &ldquo;Coton Ouat&eacute;.&rdquo;",
+        "label": "Bleu Jeans Bleu",
+        "cover": "https://image-service.stingray.com/music/SPF0001/CHANNEL_COVER/%Wx%H/jpg"
+      },
+      {
+        "id": "VIB_N1615",
+        "description": "Turn up country music's hottest summer anthems. These tracks are the perfect addition to your summertime BBQ.",
+        "label": "Hot Country Summer",
+        "cover": "https://image-service.stingray.com/music/VIB_N1615/VIBE_CHANNEL_COVER/%Wx%H/jpg"
+      },
+      {
+        "id": "VIB_T0243",
+        "description": "Celebrate Canadian talent with our pick of the country&rsquo;s top 100 songs!",
+        "label": "Top 100 Canadian Songs of All-Time",
+        "cover": "https://image-service.stingray.com/music/VIB_T0243/VIBE_CHANNEL_COVER/%Wx%H/jpg"
+      },
+      {
+        "id": "VIB_N1620",
+        "description": "This folk-heavy mix is the perfect sing-along companion for your campfire gathering. The crowd-pleasing oldies will bring you down memory lane, all the while creating new unforgettable moments with family and friends.",
+        "label": "Campfire Singalong",
+        "cover": "https://image-service.stingray.com/music/VIB_N1620/VIBE_CHANNEL_COVER/%Wx%H/jpg"
+      },
+      {
+        "id": "VIB_N1619",
+        "description": "Discover the world of Afrobeats, the sound of contemporary African pop music. Get lost in the signature drum beat rhythms and dance the night away.",
+        "label": "Afrobeats",
+        "cover": "https://image-service.stingray.com/music/VIB_N1619/VIBE_CHANNEL_COVER/%Wx%H/jpg"
+      },
+      {
+        "id": "SP0001",
+        "description": "American Idol judge and country super star, Luke Bryan, curates a channel like you've never heard. Listen to Jon Pardi, Lizzo, Kane Brown, Diplo, and Luke's newest and biggest hits, like &ldquo;Drunk on You,&rdquo; and &ldquo;Play it Again.&rdquo;",
+        "label": "Luke Bryan",
+        "cover": "https://image-service.stingray.com/music/SP0001/CHANNEL_COVER/%Wx%H/jpg"
+      },
+      {
+        "id": "VIB_N1622",
+        "description": "This sunny mix of chill soul music, old and new, is the soundtrack you need to take a break from fast-paced living.",
+        "label": "Sunrise Soul",
+        "cover": "https://image-service.stingray.com/music/VIB_N1622/VIBE_CHANNEL_COVER/%Wx%H/jpg"
+      },
+      {
+        "id": "VIB_T0242",
+        "description": "The Official Canada Day channel brings together talented Canadian artists participating in the Canada Day national shows.",
+        "label": "Canada: Together in Music",
+        "cover": "https://image-service.stingray.com/music/VIB_T0242/VIBE_CHANNEL_COVER/%Wx%H/jpg"
+      }
+    ]
+  }

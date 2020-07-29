@@ -1,0 +1,89 @@
+{
+    "id": "4961114c-177b-4528-b8e5-d38a001e7362",
+    "tracks": [
+      {
+        "id": "G:2670909",
+        "title": "Tinted Eyes",
+        "album": {
+          "cover": "https://image-service.stingray.com/music/2670909/ALBUM_COVER/%Wx%H/jpg",
+          "description": ""
+        },
+        "artists": [
+          {
+            "name": "blackbear"
+          },
+          {
+            "name": "DVBBS"
+          },
+          {
+            "name": "24KGoldn"
+          }
+        ],
+        "skippable": true,
+        "song_url": "https://music-api-service-prod.stingray.com/music-api/v1/playlist/4961114c-177b-4528-b8e5-d38a001e7362/track/G:2670909"
+      },
+      {
+        "id": "G:2507377",
+        "title": "Adore You",
+        "album": {
+          "cover": "https://image-service.stingray.com/music/2507377/ALBUM_COVER/%Wx%H/jpg",
+          "description": "Fine Line"
+        },
+        "artists": [
+          {
+            "name": "Harry Styles"
+          }
+        ],
+        "skippable": true,
+        "song_url": "https://music-api-service-prod.stingray.com/music-api/v1/playlist/4961114c-177b-4528-b8e5-d38a001e7362/track/G:2507377"
+      },
+      {
+        "id": "G:2381143",
+        "title": "Time ",
+        "album": {
+          "cover": "https://image-service.stingray.com/music/2381143/ALBUM_COVER/%Wx%H/jpg",
+          "description": ""
+        },
+        "artists": [
+          {
+            "name": "NF"
+          }
+        ],
+        "skippable": true,
+        "song_url": "https://music-api-service-prod.stingray.com/music-api/v1/playlist/4961114c-177b-4528-b8e5-d38a001e7362/track/G:2381143"
+      },
+      {
+        "id": "G:2680053",
+        "title": "I Hope",
+        "album": {
+          "cover": "https://image-service.stingray.com/music/2680053/ALBUM_COVER/%Wx%H/jpg",
+          "description": ""
+        },
+        "artists": [
+          {
+            "name": "Gabby Barrett"
+          },
+          {
+            "name": "Charlie Puth"
+          }
+        ],
+        "skippable": true,
+        "song_url": "https://music-api-service-prod.stingray.com/music-api/v1/playlist/4961114c-177b-4528-b8e5-d38a001e7362/track/G:2680053"
+      },
+      {
+        "id": "G:2437190",
+        "title": "Memories",
+        "album": {
+          "cover": "https://image-service.stingray.com/music/2437190/ALBUM_COVER/%Wx%H/jpg",
+          "description": ""
+        },
+        "artists": [
+          {
+            "name": "Maroon 5"
+          }
+        ],
+        "skippable": true,
+        "song_url": "https://music-api-service-prod.stingray.com/music-api/v1/playlist/4961114c-177b-4528-b8e5-d38a001e7362/track/G:2437190"
+      }
+    ]
+  }

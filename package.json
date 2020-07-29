@@ -1,0 +1,23 @@
+{
+  "name": "test-web",
+  "version": "1.0.0",
+  "description": "Create a simple Stingray Music Application using the official Stingray Music API",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "sa_gitlab@gitserver.corp.stingraydigital.com:smenard/tech-test-webplayer.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "node-fetch": "^2.6.0"
+  },
+  "scripts": {
+    "start": "nodemon src/app.js"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.4"
+  }
+}

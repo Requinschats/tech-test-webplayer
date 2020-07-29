@@ -1,0 +1,35 @@
+{
+    "swimlanes": [
+      {
+        "id": "BrowseAll",
+        "description": "Browse All",
+        "type": "LINK",
+        "link": "https://music.stingray.com/app/vibes/category",
+        "refreshable": false,
+        "scrollable": true
+      },
+      {
+        "id": "TvLineup",
+        "description": "TV Lineup",
+        "type": "LINK",
+        "refreshable": false,
+        "scrollable": true
+      },
+      {
+        "id": "TopChannels",
+        "description": "Most Popular",
+        "type": "CHANNEL",
+        "link": "https://music.stingray.com/app/recommendations/most-popular",
+        "refreshable": false,
+        "scrollable": true
+      },
+      {
+        "id": "NewChannels",
+        "description": "New Releases",
+        "type": "CHANNEL",
+        "link": "https://music.stingray.com/app/recommendations/new-releases",
+        "refreshable": false,
+        "scrollable": true
+      }
+    ]
+  }
