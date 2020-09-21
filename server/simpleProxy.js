@@ -20,6 +20,7 @@ const get = async (req, res) => {
       params.body = JSON.stringify(req.body);
     }
     const response = await fetch(`${BASE_URI}${req.url}`, params);
+    console.log(response)
     if (!response || response.status >= 300) {
       return res.status(response.status).json({ error: "Communication Error with Music API." });
     }
