@@ -1,8 +1,26 @@
 import Vue from 'vue'
-import App from './App.vue'
+import VueRouter from 'vue-router'
+import Home from "./components/Home";
+import Player from "./components/Player";
+import App from "./App";
+import '@fortawesome/fontawesome-free/css/all.css'
+import '@fortawesome/fontawesome-free/js/all.js'
+import Vuex from 'vuex'
+import { store } from './store/index'
 
-Vue.config.productionTip = false
+Vue.use(VueRouter);
+Vue.use(Vuex);
+Vue.config.productionTip = false;
+
+const router = new VueRouter({
+    routes: [
+        {path: '', component: Home},
+        {path: '/player', component: Player},
+    ]
+});
 
 new Vue({
-  render: h => h(App),
-}).$mount('#app')
+    router,
+    store,
+    render: h => h(App),
+}).$mount('#app');
