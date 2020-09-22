@@ -20,7 +20,7 @@
             <div style="display: flex; flex-direction: row; width: 100%; justify-content: center">
                 <audio controls autoplay style="margin-top: 50px" v-if="activeSongUrl"
                        @ended="handleSongEnd()"
-                      @timeupdate="updateSongTime"
+                       @timeupdate="updateSongTime"
                        id="audioController">
                     <source :src="activeSongUrl" type="audio/mp4">
                 </audio>
@@ -55,18 +55,20 @@
         },
         watch: {
             activeSongUrl() {
-                document.getElementById('audioController').play()
+                if (document.getElementById('audioController')) {
+                    document.getElementById('audioController').play()
+                }
             },
             songTime(time) {
-                const isPassedTimeBuffer = time.timeStamp/400 > 30;
-                if(isPassedTimeBuffer && this.songBufferUrl === this.activeSongUrl) {
+                const isPassedTimeBuffer = time.timeStamp / 400 > 30;
+                if (isPassedTimeBuffer && this.songBufferUrl === this.activeSongUrl) {
                     fetchTrack(this.tracks[0].song_url)
                         .then(response => this.songBufferUrl = getTrackUrlfromErrorResponse(response.error))
                 }
             },
-            tracks (tracks) {
+            tracks(tracks) {
                 const TRACK_COUNT_BUFFER = 2;
-                if(tracks.length < TRACK_COUNT_BUFFER) {
+                if (tracks.length < TRACK_COUNT_BUFFER) {
                     const newTracks = JSON.parse(JSON.stringify(this.initialTracks));
                     //fetchMoreTracks by calling playlist endpoint instead
                     this.tracks = this.tracks.concat(newTracks)
@@ -85,11 +87,11 @@
                     this.initialTracks = tracks;
                     this.activeSong = tracks[0];
                     this.fetchTrack(this.activeSong)
-                    .then(() => this.songBufferUrl = this.activeSongUrl)
+                        .then(() => this.songBufferUrl = this.activeSongUrl)
                 })
             },
-            updateSongTime (newTime) {
-              this.songTime = newTime
+            updateSongTime(newTime) {
+                this.songTime = newTime
             },
             formatImageUrl(imageUrl) {
                 return imageUrl.replace('%W', '300').replace('%H', '300')
@@ -101,7 +103,7 @@
             handleSongEnd() {
                 this.tracks.shift();
                 this.activeSong = this.tracks[0];
-                if(this.songBufferUrl && this.songBufferUrl !== this.activeSongUrl) {
+                if (this.songBufferUrl && this.songBufferUrl !== this.activeSongUrl) {
                     this.activeSongUrl = this.songBufferUrl
                 } else {
                     this.activeSongUrl = null;
