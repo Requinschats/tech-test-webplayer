@@ -31,7 +31,6 @@ export const fetchPlaylist = (channelId) => {
 
 export const fetchTrack = (trackFullPath) => {
     const parameters =  new URLSearchParams({device_id: 'olivier'});
-
     const START_TOKEN = 'playlist/';
     const trackPath = trackFullPath.substr(trackFullPath.indexOf(START_TOKEN) + START_TOKEN.length, trackFullPath.length)
     return fetch(`${MUSIC_BASE_URL}playlist/${trackPath}?${parameters}`)

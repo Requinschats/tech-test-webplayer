@@ -46,18 +46,30 @@
         data() {
             return {
                 tracks: [],
+                initialTracks: [],
                 activeSong: null,
                 activeSongUrl: null,
                 songTime: null,
-                songBufferUrl: null
+                songBufferUrl: null,
             }
         },
         watch: {
+            activeSongUrl() {
+                document.getElementById('audioController').play()
+            },
             songTime(time) {
-                const isPassedTimeBuffer = time.timeStamp/400 > 30
+                const isPassedTimeBuffer = time.timeStamp/400 > 30;
                 if(isPassedTimeBuffer && this.songBufferUrl === this.activeSongUrl) {
                     fetchTrack(this.tracks[0].song_url)
                         .then(response => this.songBufferUrl = getTrackUrlfromErrorResponse(response.error))
+                }
+            },
+            tracks (tracks) {
+                const TRACK_COUNT_BUFFER = 2;
+                if(tracks.length < TRACK_COUNT_BUFFER) {
+                    const newTracks = JSON.parse(JSON.stringify(this.initialTracks));
+                    //fetchMoreTracks by calling playlist endpoint instead
+                    this.tracks = this.tracks.concat(newTracks)
                 }
             }
         },
@@ -70,7 +82,8 @@
             fetchPlaylist(channelId) {
                 fetchPlaylist(channelId).then(({tracks}) => {
                     this.tracks = tracks;
-                    this.activeSong = tracks[0]
+                    this.initialTracks = tracks;
+                    this.activeSong = tracks[0];
                     this.fetchTrack(this.activeSong)
                     .then(() => this.songBufferUrl = this.activeSongUrl)
                 })
