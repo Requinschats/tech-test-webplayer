@@ -70,7 +70,7 @@
             },
             handlePlayerNavigation(channel) {
                 this.$store.dispatch('setChannel', channel).then(() => {
-                    this.$router.push('player')
+                    this.$router.push({path: 'player', query: {channel: channel.id}})
                 })
             }
         }
